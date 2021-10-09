@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ARGS=$1
+DEVPORT=$(uci -q get socat.http.atcport)
+
+if [ "$DEVPORT" ]; then 
+	echo "${ARGS}" | socat - ${DEVPORT},,crnl
+fi

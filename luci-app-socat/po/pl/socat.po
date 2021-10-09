@@ -1,0 +1,50 @@
+﻿msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+"Language: pl\n"
+"Last-Translator: Rafał Wabik (IceG) - From eko.one.pl forum\n"
+
+msgid "AT Commands"
+msgstr "Polecenia AT"
+
+msgid "AT Commands Terminal"
+msgstr "Terminal poleceń AT"
+
+msgid "Configuration"
+msgstr "Ustawienia"
+
+msgid "Web UI for sending AT Commands."
+msgstr "Interfejs użytkownika dla socat do obsługi poleceń AT."
+
+msgid "User AT Commands"
+msgstr "Polecenia AT użytkownika"
+
+msgid "Command to send"
+msgstr "Polecenie do wysłania"
+
+msgid "Reply"
+msgstr "Odpowiedź"
+
+msgid "Send Command"
+msgstr "Wyślij polecenie"
+
+msgid "Sending commands to modem"
+msgstr "Wysyłanie poleceń do modemu"
+
+msgid "Please enter a AT Command"
+msgstr "Proszę podać polecenie do wysłania"
+
+msgid "Socat Configuration"
+msgstr "Konfiguracja socat"
+
+msgid "AT Commands Terminal Settings"
+msgstr "Ustawnienia dla terminala"
+
+msgid "AT Command Sending Port"
+msgstr "Port do komunikacji"
+
+msgid "Configuration panel for socat."
+msgstr "Panel ustawień dla socat."
+
+msgid "Each line must have the following format: 'AT Command name;AT Command'. Save to file '/etc/config/atsocat.user'."
+msgstr "Każda linijka powinna mieć następujący format: 'Etykieta polecenia;Polecenie AT'. Dla wygody polecenia użytkownika zapisywane są w pliku '/etc/config/atsocat.user'."

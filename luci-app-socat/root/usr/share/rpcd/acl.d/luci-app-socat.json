@@ -1,0 +1,17 @@
+{
+	"luci-app-socat": {
+		"description": "Grant UCI and file access for luci-app-socat",
+		"read": {
+			"uci": [ "socat" ]
+		},
+		"write": {
+			"uci": [ "socat" ]
+		}
+	}
+}
+
+
+
+
+
+			
