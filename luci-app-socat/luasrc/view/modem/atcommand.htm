@@ -89,7 +89,7 @@ function postcmd(cmd) {
         console.log(x)
 
 	var aStr = x.response;
-	newStr = aStr.substring(0, aStr.indexOf('ERROR') + 'ERROR'.length);
+	newStr = aStr.substring(0, aStr.indexOf('OK') + 'OK'.length);
 	var myre = /(^[ \t]*\n)/gm;
 	var bStr = newStr.replace(myre,"");
         document.getElementById("result").innerHTML = bStr;
