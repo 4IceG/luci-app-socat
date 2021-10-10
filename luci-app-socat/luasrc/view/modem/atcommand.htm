@@ -54,16 +54,15 @@ window.onload = function readUSER() {
 
 					for(var d=0;d<=count;d++)
 						{
-    			    		var opt = document.createElement('option');
-
+    			    				var opt = document.createElement('option');
 							var s = json[d].usd;
 							var fields = s.split(/;/);
 							var name = fields[0];
 							var code = fields[1];
 							opt.text = name;
 							opt.value = code.trim();
-    					    opt.innerHTML = name;
-    						select.appendChild(opt);
+    					    		opt.innerHTML = name;
+    							select.appendChild(opt);
 						}
 
 			}
@@ -90,7 +89,7 @@ function postcmd(cmd) {
         console.log(x)
 
 	var aStr = x.response;
-	newStr = aStr.substring(0, aStr.indexOf('OK') + 'OK'.length);
+	newStr = aStr.substring(0, aStr.indexOf('ERROR') + 'ERROR'.length);
 	var myre = /(^[ \t]*\n)/gm;
 	var bStr = newStr.replace(myre,"");
         document.getElementById("result").innerHTML = bStr;
