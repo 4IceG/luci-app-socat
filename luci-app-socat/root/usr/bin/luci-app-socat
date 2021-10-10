@@ -2,7 +2,18 @@
 
 ARGS=$1
 DEVPORT=$(uci -q get socat.http.atcport)
+ATINOUT=/usr/bin/atinout
+SOCAT=/usr/bin/socat
 
-if [ "$DEVPORT" ]; then 
-	echo "${ARGS}" | socat - ${DEVPORT},,crnl
+if [ "$DEVPORT" ]; then
+
+	if [ -f "$ATINOUT" ]; then
+		echo "${ARGS}" | /usr/bin/atinout - ${DEVPORT} -
+	else 
+    		if [ -f "$SOCAT" ]; then
+		echo "${ARGS}" | socat - ${DEVPORT},,crnl
+		fi
+	fi
+
 fi
+
