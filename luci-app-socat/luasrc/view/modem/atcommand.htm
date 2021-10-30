@@ -1,8 +1,9 @@
 <%+header%>
-<!--
-    This module gives some convinience to access the shell via web, in
-    case that you don't have a uart console or telnet/ssh connection.
-    Hua Shao <nossiac@163.com>
+<!--    
+
+    Copyright 2020-2021 Rafał Wabik (IceG) - From eko.one.pl forum
+    Licensed to the GNU General Public License v3.0.
+
 -->
 <h2><%:AT Commands%></h2>
 	<label><%:Web UI for sending AT Commands.%></label>
@@ -87,7 +88,6 @@ function postcmd(cmd) {
     (new XHR()).post("<%=luci.dispatcher.build_url("admin", "modem", "webcmd")%>", {"cmd":cmd}, function(x) {
         console.log(x.response)
         console.log(x)
-
 	var aStr = x.response;
 	newStr = aStr.substring(0, aStr.indexOf('OK') + 'OK'.length);
 	var myre = /(^[ \t]*\n)/gm;
@@ -96,12 +96,8 @@ function postcmd(cmd) {
     });
     return false;
 }
-
-
 document.addEventListener('DOMContentLoaded', function (ev) {var button = document.getElementById("sendcmd");
         button.addEventListener("click", function () {
-
-
 		var s = document.getElementById("code").value;
 		if ( s.length == 0 )
 		{
@@ -129,4 +125,3 @@ document.addEventListener('DOMContentLoaded', function (ev) {var button = docume
 </script>
 
 <%+footer%>
-

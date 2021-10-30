@@ -16,4 +16,3 @@ if [ "$DEVPORT" ]; then
 	fi
 
 fi
-

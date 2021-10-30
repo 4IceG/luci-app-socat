@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 	
 LUCI_TITLE:=Web UI for socat
 LUCI_DEPENDS:=+socat +luci-compat
-PKG_VERSION:=1.0-09102021
+PKG_VERSION:=1.1-2021-10-30
 PKG_LICENSE:=GPLv3
 
 define Package/luci-app-socat/postinst
